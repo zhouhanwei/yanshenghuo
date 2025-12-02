@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- 从原 HTML 提取的 Material Icons 样式 --- */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* --- (可选) 解决 Antd 和 Tailwind 样式冲突 --- */
+/* 防止 Tailwind 重置 Antd 按钮样式 */
+:where(.css-dev-only-do-not-override-*) a {
+    color: inherit;
+}
