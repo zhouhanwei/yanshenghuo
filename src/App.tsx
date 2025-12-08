@@ -2,7 +2,7 @@
  * @Author: zhouhanwei sgzhouhanwei@163.com
  * @Date: 2025-12-02 13:42:42
  * @LastEditors: zhouhanwei sgzhouhanwei@163.com
- * @LastEditTime: 2025-12-02 17:37:57
+ * @LastEditTime: 2025-12-08 09:51:48
  * @FilePath: /yxc-ssr/src/App.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -21,6 +21,7 @@ import FestivalDetail from './pages/FestivalDetail'; // 引入新组件
 import PracticalTools from './pages/PracticalTools';
 import LocalCommunity from './pages/LocalCommunity';
 import CommunityDetail from './pages/CommunityDetail';
+import CreateCommunity from './pages/CreateCommunity'; // 引入新组件
 import PostDetail from './pages/PostDetail';
 import './index.css' 
 
@@ -52,6 +53,7 @@ export default function App() {
         <Route path="/history/detail" element={<HistoryDetail />} />
 
         <Route path="/festivals" element={<Festivals/>} />
+        <Route path="/community/new" element={<CreateCommunity />} /> {/* 新增创建圈子页 */}
         <Route path="/festivals/detail" element={<FestivalDetail />} /> {/* 详情页 */}
 
         <Route path="/tools" element={<PracticalTools />} />

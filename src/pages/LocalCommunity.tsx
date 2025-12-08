@@ -70,6 +70,14 @@ const LocalCommunity: React.FC = () => {
                                 探索和加入你感兴趣的本地社群
                             </p>
                         </div>
+                        {/* 新增按钮 */}
+                        <Link
+                            to="/community/new"
+                            className="flex items-center justify-center h-10 px-4 bg-[#f48c25] text-white text-sm font-bold rounded-lg hover:opacity-90 transition-opacity"
+                        >
+                            <span className="material-symbols-outlined mr-2">add_circle</span>
+                            创建圈子
+                        </Link>
                     </div>
 
                     {/* Search Bar */}
